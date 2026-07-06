@@ -1,4 +1,4 @@
-CREATE DATABASE company_db
+CREATE DATABASE company_db;
 
 CREATE TABLE employees(
   id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -15,7 +15,6 @@ CREATE TABLE departments(
 CREATE TABLE projects(
   id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
   project_name VARCHAR(50),
-  employeer_id INT
   )
 
 
@@ -115,4 +114,4 @@ LIMIT 2;
 INSERT INTO projects(project_name)VALUES
 ('Cash');
 
-SELECT DISTINCT (project_name_ FROM projects
+SELECT DISTINCT project_name FROM projects
