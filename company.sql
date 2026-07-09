@@ -114,4 +114,8 @@ LIMIT 2;
 INSERT INTO projects(project_name)VALUES
 ('Cash');
 
-SELECT DISTINCT project_name FROM projects
+SELECT DISTINCT project_name FROM projects;
+
+SELECT employees.name, departaments.dep_name FROM employees
+INNER JOIN departaments
+ON employees.id = departaments.id;
